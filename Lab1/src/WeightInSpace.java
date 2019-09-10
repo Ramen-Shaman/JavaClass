@@ -92,6 +92,7 @@ public class WeightInSpace
 		System.out.println("An object weighing "+ formatter.format(EarthWeight) + " pounds on Earth and");
 		System.out.println("at a distance of " + formatter.format(Height) + " miles from the");
 		System.out.println("Earth will weigh approximately " + formatter.format(SpaceWeight) + " pounds in space.");
+		System.out.println("");
 		
 		//Display author info...
 		System.out.println("This program was written by: Cameron Hall");
