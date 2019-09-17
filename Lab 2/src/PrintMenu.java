@@ -31,7 +31,31 @@ public class PrintMenu
 	public static void main(String[] args)
 	{
 		
+		//call description method...
+		ProgramDescription();
+
+		//present categories to users...
+		System.out.println("0. Display Uppercase Letters");
+		System.out.println("1. Display Lowercse Letters");
+		System.out.println("2. Display Numbers 0-9");
+		System.out.println("3. Exit");
+		System.out.println();
+		System.out.println();
+
+		//Prompt user for selection...
+		System.out.print("Enter your selection: ");
+
 
 	}
 
+	public static void ProgramDescription()
+	{
+	Scanner keybaord = new Scanner(System.in);
+		
+		System.out.println("This program will present different catagories of information");
+		System.out.println("depending on what option the user selects.");
+		System.out.println("");
+	}
 }
+
+
