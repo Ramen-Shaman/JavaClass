@@ -4,7 +4,7 @@
  * Fall 2019
  * The University of Memphis
  * 
- * Assignment:		Print Menu and ASCII Conversion
+ * Assignment:		Sum of Numbers
  * Developer:		Cameron Hall
  * Version:			1.0
  * Compiler:		Java ver. 1.8.0_201
@@ -52,6 +52,7 @@ public class SumTheNumbers
 					exit = true;
 				}
 			}
+			
 			catch(Exception letterExc)
 			{
 				//	if a letter, handle here...
@@ -78,6 +79,16 @@ public class SumTheNumbers
 						//	set the flag indicating the user wants to exit the program...
 						exit = true;
 					}
+					
+					if(beginningNumber < endingNumber)
+					{
+						System.out.println("you did it!");
+					}
+					
+					else
+					{
+						System.out.println("The ending number must be larger than the beginning number!");				
+					}
 				}
 				catch(Exception letterExc)
 				{
@@ -87,12 +98,6 @@ public class SumTheNumbers
 					userError = true;
 					//	tell the user what they did wrong...
 					System.out.println("Invalid Entry! Try that again.");
-				}
-				
-				if(!exit && !userError)
-				{
-					numberSum = beginningNumber + endingNumber;
-					System.out.println("The sum of the numbers " + beginningNumber + " to "+ endingNumber + " is "+ numberSum + "." );
 				}
 			}
 		}
@@ -117,7 +122,7 @@ public class SumTheNumbers
 	{
 		System.out.println();
 		System.out.println("This program was written by: Cameron Hall");
-		System.out.println("Laboratory Exercise 2");
+		System.out.println("Laboratory Exercise 3");
 		System.out.println("TECH 2251");
 		System.out.println("Advanced Programming Technology");
 		System.out.println("Fall 2019");
