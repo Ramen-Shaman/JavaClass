@@ -82,7 +82,12 @@ public class SumTheNumbers
 					
 					if(beginningNumber < endingNumber)
 					{
-						System.out.println("you did it!");
+						for (beginningNumber++; endingNumber>=beginningNumber; beginningNumber++)
+						{
+							numberSum = numberSum + beginningNumber;
+						}
+						
+						System.out.println("The sum of the number "+beginningNumber+" to "+endingNumber+" is "+numberSum+".");
 					}
 					
 					else
