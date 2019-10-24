@@ -22,6 +22,10 @@
 //	Student:  TO DO ->
 //	need to reference the appropriate class...
 
+import java.util.Scanner;
+
+import org.uofm.tools.EncapsulationTest;
+
 public class Lecture8_Main
 {
 	//	object used to grab input from keyboard...
@@ -35,27 +39,31 @@ public class Lecture8_Main
 	{
 		//	Student:  TO DO ->
 		//	create an object of the 'EncapsulationTest' class...
+		EncapsulationTest eT = new EncapsulationTest();
+		
 		
 		
 		//	ask the user to enter a name...
 		System.out.print("Please enter the name:       ");
 		//	Student:  TO DO ->
 		//	store the name entered using the appropriate means...
-		
+		eT.setName(keyboard.nextLine());
+		System.out.println();
 		
 		
 		//	ask the user to enter the ID number...
 		System.out.print("Please enter the ID Number:  ");
 		//	Student:  TO DO ->
 		//	store the ID number entered using the appropriate means...
-		
-		
+		eT.setIdNum(keyboard.nextLine());
+		System.out.println();
 		
 		//	ask the user to enter the age...
 		System.out.print("Please enter the age:        ");
 		//	Student:  TO DO ->
 		//	store the age entered using the appropriate means...
-		
+		eT.setAge(keyboard.nextInt());
+		System.out.println();
 		
 		
 		//	Student:  TO DO ->
@@ -65,6 +73,8 @@ public class Lecture8_Main
 		//	Name:   Test User
 		//	ID Num: 45658LLP
 		//	Age:    56
-		
+		System.out.println("Name:     " +eT.getName());
+		System.out.println("ID Num:   " + eT.getIdNum());
+		System.out.println("Age:      " +eT.getAge());
     }
 }
