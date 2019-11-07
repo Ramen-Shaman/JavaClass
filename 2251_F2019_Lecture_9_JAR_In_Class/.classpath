@@ -3,5 +3,10 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="lib" path="C:/MyWork/UofM_Fall_2019/TECH2251/Course Handouts/JAR_TEST/library/StringUtilities.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Ramen Shaman/Desktop/JavaClass/2251_F2019_Lecture_9_StringUtilities/StringUtilities.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/C:/Users/Ramen%20Shaman/Desktop/JavaClass/2251_F2019_Lecture_9_StringUtilities/api/"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
