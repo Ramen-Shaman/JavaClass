@@ -1,6 +1,6 @@
 package org.uofm.tools;
 
-public class Algebra
+public class Algebra extends ElementaryArithmetic
 {
 
 	public double[] QuadraticEquation(double a, double b, double c)
