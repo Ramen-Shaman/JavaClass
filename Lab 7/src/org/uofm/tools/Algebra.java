@@ -10,13 +10,13 @@ public class Algebra extends ElementaryArithmetic
 		//define the Quadratic Equation formula...
 		double result = b * b - 4.0 * a * c;
 		
-		//based on the resulyt of the operation, handle response...
+		//based on the result of the operation, handle response...
 		if (result > 0.0)
 		{
 			qResult = new double[2];
 			
-			qResult[0] = (-b + Math.pow(result, 0.5) / (2.0 * a));
-			qResult[1] = (-b - Math.pow(result, 0.5) / (2.0 * a));
+			qResult[0] = (-b + Math.pow(result, 0.5)) / (2.0 * a);
+			qResult[1] = (-b - Math.pow(result, 0.5)) / (2.0 * a);
 			return(qResult);
 		}
 		else if (result == 0.0)
