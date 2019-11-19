@@ -16,8 +16,10 @@ public class WriteDataFile
 	{
 		ReadDataFile rdf = new ReadDataFile();
 		FileWriter Fw = new FileWriter(fileName, false);
+		String s; 
 		
-		Fw.write(rdf.filecontents);
+		rdf.ReadFile(fileName);
+		Fw.write(s = rdf.filecontents);
 		
 		Fw.close();
 		return writemode;

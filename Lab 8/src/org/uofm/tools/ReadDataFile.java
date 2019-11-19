@@ -8,7 +8,7 @@ import java.io.IOException;
 public class ReadDataFile 
 {
 	
-	 public String filecontents;
+	 public String filecontents = "";
 	 public String ReadFile (String fileName) throws IOException
 	 { 	
 		 
