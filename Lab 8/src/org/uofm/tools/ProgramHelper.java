@@ -13,7 +13,7 @@ public class ProgramHelper
 	{
 		System.out.println();
 		System.out.println("This program was written by: Cameron Hall");
-		System.out.println("Laboratory Exercise 7");
+		System.out.println("Laboratory Exercise 8");
 		System.out.println("TECH 2251");
 		System.out.println("Advanced Programming Technology");
 		System.out.println("Fall 2019");

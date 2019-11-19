@@ -1,43 +1,44 @@
 package org.uofm.tools;
 
 import java.io.BufferedReader;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 
 public class ReadDataFile 
 {
+	public String filecontents = "";
 	
+<<<<<<< HEAD
 	 public String filecontents = "";
+=======
+>>>>>>> 9ad3c72cd72eac62b599eaa08abecda5038ddf63
 	 public String ReadFile (String fileName) throws IOException
 	 { 	
-		 
-		FileReader Fr = new FileReader(fileName);
-		 BufferedReader br = new BufferedReader(Fr);
-		 
-		 try
-		 {
-			 filecontents = br.readLine();
-		 }
-		 catch (FileNotFoundException fnf)
-		 {
-			 System.out.println("where does this show up?");
-			 fnf.getMessage();
-		 }
-		 catch (IOException exc)
-		 {
-			 System.out.println("There was an error reading the file!");
-		 }
+		 	
+			FileReader Fr = new FileReader(fileName);
+			BufferedReader br = new BufferedReader(Fr);
+		try
+		{
 
-		 finally
-		 {
-		 br.close();
-		 Fr.close();
-		 }
+			
+			while ((filecontents = br.readLine()) != null)
+			{
+			 return filecontents;
+			}
+			
 		
-		 return filecontents;
 		 
-		
+		}
+		catch(IOException exc)
+		{
+			System.out.println();
+			exc.getMessage();
+		}
+		finally
+		{
+			br.close();
+		}
+		return filecontents;
+
 	 }
-
 }
